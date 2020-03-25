@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components Example - TraversyMedia</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        h2 {
+          font-family: 'Montserrat';
+          margin: 2rem 0 2.25rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>JS Web Components</h2>
+
+    <user-card name="Augusto Dias" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+      <div slot="email">johndoe@gmail.com</div>
+      <div slot="phone">555-555-555</div>
+    </user-card>
+
+    <user-card name="Bertha Blume" avatar="https://randomuser.me/api/portraits/women/2.jpg">
+      <div slot="email">janedoe@gmail.com</div>
+      <div slot="phone">333-333-333</div>
+    </user-card>
+
+    <script src="userCard.js"></script>
+</body>
+</html>
